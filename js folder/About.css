@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   /* background-color: darkgray;*/
+
+}
+body{
+    background-color: whitesmoke;
+    animation: theme 21s linear infinite;
+    
+    &:after,
+    &:before {
+        content: '';
+        display: block;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        width: 100vw;  
+        height: 100vh; 
+        width: 100vmax;
+        height: 100vmax;
+        background: rgba(0,0,0,0.05);
+        animation: background 90s linear infinite;
+    }
+
+    &:after {
+        left: 15vw;
+    }
+
+    &:before {
+        right: 15vw;
+        animation-delay: -30s;
+        animation-direction: reverse;
+    }
+}
+    
+@keyframes theme {
+    0% {
+        background: #74C390;
+    }
+    
+    16% {
+        background: #5DBDB6;
+    }
+    
+    33% {
+        background: #59D4E1;
+    }
+    
+    50% {
+        background: #51BCE8;
+    }
+    
+    66% {
+        background: #FA5374;
+    }    
+    
+    83% {
+        background: #E46653;
+    }
+
+    100% {
+        background: #74C390;
+    }
+}
+
+@keyframes background {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+nav{
+    background-color: #51BCE8;
+    height: 20px;
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   margin: 0;
+   background: transparent;
+
+}
+nav .menu-link{
+    flex-direction: row;
+
+
+}
+
+.about-content2 {
+    margin-top: 20px;
+}
+.about-content{
+    margin-bottom: 20px;
+}
+
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+   
+.menu-link a{
+    text-decoration: none;
+    color: palegoldenrod;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+.menu-link a:hover{
+    
+    font-size: 30px;
+    
+    
+}
+.about-image img{
+    width:150px;
+    height: 150px;
+    float: right;
+}
+.about-image2 img{
+    width:150px;
+    height: 150px;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 150px;
+
+ }
+ .footer a{
+    text-decoration: none;
+    color: white;
+ }
+ .footer .footer-icon a{
+    text-decoration: none;
+    color: white;
+    float:none;
+
+
+ }
+

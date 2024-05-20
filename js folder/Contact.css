@@ -1,0 +1,52 @@
+.contact-wrap{
+   
+   margin: 100px;
+   color: black;
+   width: 400px;
+  height: 100px;
+  /*border: 1px solid #a61919;*/
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-left: 400px;
+    
+}
+
+.contact-wrap .contact-us{
+    background-color: aqua;
+    text-align:center;
+    padding: 0 45px;
+    
+    
+   /* display: flex;*/
+    justify-content: center;
+    width: 20em;
+    height: 20em;
+    border: 2PX solid indianred;
+    
+}
+.contact-wrap .contact-fill{
+    background-color: palegreen;
+    text-align: center;
+    /*display: flex;*/
+    justify-content: center;
+    width: 20em;
+    height: 20em;
+    border: 2PX solid indianred;
+   
+    
+}
+.contact-fill a{
+    font-size: 20px;
+}
+.contact-us img{
+    margin: 0;
+
+   width: 400px;
+  height: 200px;
+  border: 1px solid #a61919;
+  display: flex;
+  flex-direction: row;
+  /*padding-top: 100px;
+  padding-left: 400px;*/
+}

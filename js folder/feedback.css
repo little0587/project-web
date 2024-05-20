@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+}
+header{
+    width: 100%;
+    /*background: linear-gradient(to left, green,red);*/
+    background: transparent;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+}
+h1{
+    color: rgb(34, 177, 196);
+    background: transparent;
+}
+.menu a{
+    text-decoration: none;
+    color: red;
+    font-weight: 400;
+    transition: 0.5s;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.menu a:hover{
+    /*border-bottom: 5px solid palegreen;
+    border-radius: 20px;*/
+    font-size: 30px;
+    
+    
+    
+}
+
+
+section{
+    text-align: center;
+    /*padding: 20px;*/
+
+}
+form{
+    max-width: 400px;
+    margin: 20px auto;
+    padding-bottom: 40px;
+    /*background: linear-gradient(to bottom, pink, red);*/
+    background: transparent;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.1);
+    border-radius: 20px;
+    font-weight: 1000;
+
+    
+}
+form input[type = "text"],
+form input[type = "email"],
+form textarea{
+    width: calc(100% -20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button{
+    background-color: blue;
+    color: white;
+    border: 0;
+    padding:10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+body{
+    animation: theme 21s linear infinite;
+    &:after,&:before{
+        /*content: '';*/
+        display: block;
+        position: fixed;
+        z-index: -5;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        width: 100vmax;
+        height: 100vmax;
+        background:  rgba(0,0,0,0.05);
+        animation: background 90s linear infinite;
+    }
+
+    &:after{
+        left: 15vw;
+    }
+    &:before{
+        right: 15vw;
+        animation-delay: 0s;
+        animation-direction: reverse;
+    }
+}
+    @keyframes theme {
+        0% {background-image: url(./images/cofee.jpg);}
+       /* 20%{background-image:url(.//images/OIP.jpeg);}*/
+        33%{background-image: url(./images/r2.jpg);}
+        100%{background-image: url(.//images/r3.jpg);}
+       /* 66%{background-color: url(.//images/twitter.png);}
+        83%{background-image: url(.//images/instagara\,.jpg);}
+        100%{background-image: url(.//images/twitter.png);}*/
+        
+    }
+    @keyframes background{
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(360deg);}
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        height: 150px;
+    
+     }
+     .footer a{
+        text-decoration: none;
+        color: white;
+     }
+     .footer .footer-icon a{
+        text-decoration: none;
+        color: white;
+        float:none;
+    
+
+    }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <header>
+        <h1>Feedback</h1><br>
+        <div class="menu">
+            <a href="Index.html" class="fa fa-home" target="_parent"></a> |
+            <a href="About.html" target="_self" class="fa fa-info-circle"></a>|
+            <a href="Contact.html" target="_self" class="fa fa-address-book"></a>
+        </div>
+    </header>
+
+    <section>
+        <form action="connectfeed.php" method="post">
+            <label for="name">NAME:<input type="text" required autofocus></label><br><br>
+            <label for="E-mail">E-mail<input type="email" name="email" required autofocus></label><br><br>
+           <p> <label for="feedback">Feedback:</label></p>
+            <textarea id="feedback" name="feedback" placeholder="please type your feedback here" required maxlength="50"></textarea><br><br>
+            <label for="button"><button type="Submit" >Send</label>
+        </form>
+    </section>
+
+    <div class="footer">
+        <p>&copy; all Right reserved</p>
+        <p><a href="mailto:vishaltree0587@gmail.com">vishaltree0587@gmail.com</a> 
+            | <a href="https//www.linkedin.com/in/vishal-gupta-5b385323a">linkedin</a></p>
+            <div class="footer-icon">
+            <a href="www.facebook.com" class="fa fa-facebook">lucky</a><br>
+            <a href="www.instagaram.com" class="fa fa-instagram">vishal.0587</a>
+
+            </div>
+      </div>
+</body>
+</html>
